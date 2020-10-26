@@ -1,0 +1,307 @@
+.navbar{
+    background-color: rgba(217, 151, 248, 0.6) !important;
+    
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(10, 79, 119) !important;
+}
+
+span > a{
+    font-weight: bold;
+    color: rgb(10, 79, 119) !important;
+}
+
+.jumbotron{
+    height: 700px;
+    background-size: cover;
+background-image: url(./assets/doc3.jpeg) ;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .jumbotron {
+        background-image: url(./assets/doc4.jpeg );
+     background-size: auto;
+     height: 700px;
+     background-repeat: no-repeat;
+    }
+  }
+
+
+
+.get-started{
+    padding: 20px 40px 20px 40px;
+    background-color: rgb(187, 26, 236);
+}
+
+.header-para, .heading{
+    color: rgb(75, 9, 138);
+    font-weight: bold;
+}
+
+.avatar{
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+}
+
+.main-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    
+}
+
+
+
+.card1{
+
+    width: 300px;
+    height: 300px;
+   
+    margin-top: 10px;
+    
+ 
+}
+
+h4.center{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image1, .image2, .image3, .image4{
+    margin-top: 30px;
+}
+
+.avatar1{
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(163, 77, 233);
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .card1 {
+        width: 100%;
+    }
+  }
+
+
+  .main-desc{
+      
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 50px;
+
+  }
+  @media only screen and (max-width: 600px) {
+    .descript1, .descript2{
+        width: 100%;
+    }
+  }
+  
+  
+
+  .descript1 {
+width: 600px;
+height: 500px;
+
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-top: 130px;
+  }
+
+  .descript2{
+    width: 500px;
+    height: 500px;
+    
+    padding-left: 10px;
+  }
+ 
+  .avatar2{
+    vertical-align: middle;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgb(177, 56, 224);
+  }
+
+  .learn-more{
+
+    width: 200px;
+    padding: 10px;
+    color: rgb(250, 249, 249);
+    background-color: rgb(160, 25, 218);
+    border-radius: 50px;
+  }
+
+  .learn-more:hover{
+      background-color: darkorchid !important;
+  }
+
+  p.font{
+      font-size: 20px;
+  }
+
+
+.Doct{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+    
+   
+   /* padding-left: 150px; */
+    
+}
+
+.doctor_available{
+    background-color: rgb(248, 248, 248); 
+    color: rgb(118, 40, 182);
+    box-shadow: 0px 10px 15px blueviolet;
+    border: blueviolet;
+
+}
+.doctor_available:hover{
+    background-color: rgb(161, 85, 231);
+}
+
+.doctor1, .doctor2, .doctor3, .doctor4, .doctor5, .doctor6{
+    
+    height: 50px;
+  margin: 10px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.btn-doctor{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 50px !important;
+    
+
+}
+
+@media only screen and (max-width:600px){
+    .btn-doctor{
+        
+        width: 150px;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 50px !important;
+    background-color: rgb(155, 55, 236);
+    }
+}
+
+.footer{
+
+background-color: rgb(173, 99, 241,0.5);
+}
+
+/* About us */
+
+.aboutus{
+    background-color: rgb(171, 78, 199);
+    padding: 30px;
+    padding-left: 50px;
+    color: white;
+}
+
+  
+.jumbotron1{
+    height: 600px;
+    background-size: cover;
+background-image: url(./assets/doctor.jpg ) ;
+opacity: 0.8;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+.accordion{
+width: 1000px;
+
+padding-top: 150px;
+
+}
+
+@media only screen and (max-width:1000px){
+    .accordion{
+        width: 100%;
+        padding:10px;
+    }
+}
+
+/* School Health */
+ .youtube{
+padding: 100px;
+ }
+
+ @media only screen and (max-width: 700px){
+     .iframe1{
+         width: 400px;
+         height: 300px;
+     }
+     .youtube{
+         padding: 30px;
+     }
+ }
+
+ @media only screen and (max-width: 1300px){
+     .image-gallery{
+         width: 200px;
+         height: 200px;
+     }
+ }
+
+ .subscribe{
+     margin-bottom: 0;
+     background-color: rgb(130, 69, 228);
+     padding: 30px 100px 30px 100px;
+ }
+
+
+.btn-outline-secondary{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    color: rgb(131, 19, 131);
+    
+}
+
+.btn-outline-secondary:hover{
+    background-color: rgb(130, 41, 212);
+}
+
+.sub{
+    color: white;
+}
+
+.form-control{
+ background-color: rgb(224, 190, 243);
+}
+
+.gallery{
+padding-bottom: 30px;
+}
+
+.slide1{
+    background-color: blueviolet;
+}

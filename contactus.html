@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinDOc</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <!-- Start of NavBar -->
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary ">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png " alt="logo" width="150px" height="30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#supportedcontent"
+                aria-controls="suportedcontent" aria-expanded="false" aria-label="Toggle Navigtion">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="supportedcontent">
+                <ul class="navbar-nav mr-auto ml-3 ">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./schoolhealth.html">School Health</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mr-3">
+                    <a data-toggle="modal" data-target="#login">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
+            </div>
+        </nav>
+
+
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Navbar -->
+
+        <!-- Start of About Us -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12  aboutus">
+                    <h3 class="text-left">Contact Us</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of About Us -->
+
+        <!-- Start of Location -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="mt-2 mb-3">Contact Info</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.7764678398385!2d67.04457294985475!3d24.97371878392212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340f7ab407361%3A0x14d9d3348adeb9e4!2sIqra%20University%20North%20Campus!5e0!3m2!1sen!2s!4v1590579449418!5m2!1sen!2s"
+                        width="500" height="280" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+
+                    <h5 class="mt-2">Clinics in Karachi </h5>
+                    <ul class="fa-ul">
+                        <li> <i class="fa fa-map-marker fa-lg"
+                                style="margin-right: 20px; color: rgb(130, 12, 185); margin-top: 20px;"></i> Shop No 2c,
+                            Plot 9C Ground
+                            Floor,Sunset
+                            EXT. North, Karachi</li>
+                        <li><i class="fa fa-envelope-o fa-lg"
+                                style="margin-right: 20px; color: rgb(130, 12, 185); margin-top: 20px;"></i><a
+                                href="malaikakhalid_@hotmail.com">malaikakhalid_@hotmail.com</a></li>
+
+                        <li><i class="fa fa-phone fa-lg"
+                                style="margin-right: 20px; color: rgb(130, 12, 185); margin-top: 20px;"></i>03358229828
+                        </li>
+                        <li><i class="fa fa-whatsapp fa-lg"
+                                style="margin-right: 20px; color: rgb(130, 12, 185); margin-top: 20px;"></i>03358229828
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="mt-2 mb-3">Book an Appointment</h2>
+
+                    <form>
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Username"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-6">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Select Time</option>
+                                    <option>11:00 - 2:00</option>
+                                    <option>2:00 - 4:00</option>
+                                    <option>4:00 - 6:00</option>
+                                    <option>6:00 - 8:00</option>
+                                    <option>8:00 - 10:00</option>
+                                    <option>10:00 - 12:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Select Doctor</option>
+                                    <option>Dr. Malaika Khalid</option>
+                                    <option>Dr. Aqeel Ur Rehman</option>
+                                    <option>Dr. Ifrah Khalid</option>
+                                    <option>Dr. Adil Masood</option>
+                                    <option>Dr. Huma Saeed</option>
+                                    <option>Dr. Khalid Masood</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="date" class="form-control" id="inputPassword4" required>
+                            </div>
+                        </div>
+
+
+                        <div class="form-row mb-3">
+                            <div class="form-group col-md-6">
+
+                                <input type="text" class="form-control" id="inputCity" placeholder="City" required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+
+                                <input type="text" class="form-control" id="inputPhonenumber" placeholder="Phone Number"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <textarea type="textarea" class="form-control" id="inputtextarea" rows="5" cols="6"
+                                placeholder="Message" style="color: black;" required>
+                                </textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="background-color: rgb(156, 80, 228);">Make Appointment</button>
+                    </form>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- End of Location -->
+
+        <!-- Start Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 offset-1 col-sm-2 mt-5">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled ">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./aboutus.html">About Us</a></li>
+                            <li><a href="./schoolhealth.html">School Health</a></li>
+                            <li><a href="./contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5 mt-5">
+                        <h5>Our Address</h5>
+                        <address>
+                            R-366 Sector 7D/3 North KArachi<br>
+                            Near Iqra University North Campus<br>
+                            Pakistan<br>
+                            <i class="mb-3 fa fa-phone fa-lg"></i> Tel.: +923358229828<br>
+                            <i class="mb-3 fa fa-fax fa-lg"></i>Fax: +852 8765 4321<br>
+                            <i class="mb-3 fa fa-envelope fa-lg"></i> Email: <a
+                                href="mailto:malaikakhalid_@hotmail.com">malaikakhalid_@hotmail.com</a>
+                        </address>
+                    </div>
+                    <div class="col-sm-12 col-sm-4  align-self-center mt-4 ">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                    class="fa fa-google-plus fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-facebook"
+                                href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                    class="fa fa-linkedin fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                    class="fa fa-twitter fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+                                    class="fa fa-youtube fa-md"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:" class="fa fa-envelope fa-md"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>© Copyright 2020 TinDoc</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+
+</body>
+
+</html>

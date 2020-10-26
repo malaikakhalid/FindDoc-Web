@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinDOc</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <!-- NavBar -->
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="logo" width="150px" height="30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#supportedcontent"
+                aria-controls="suportedcontent" aria-expanded="false" aria-label="Toggle Navigtion">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="supportedcontent">
+                <ul class="navbar-nav mr-auto ml-3 ">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./schoolhealth.html">School Health</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mr-3">
+                    <a data-toggle="modal" data-target="#login">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
+            </div>
+        </nav>
+
+
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1"
+                                        id="exampleInputEmail3" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Navbar -->
+
+        <!-- Start of About Us -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12  aboutus">
+                    <h3 class="text-left">About Us</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of About Us -->
+
+        <!-- Start of jumbotron -->
+        <div class="jumbotron1">
+            <div class="col-lg-12 col-md-6 col-sm-12">
+                <center>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        ABOUT US
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Pakistan’s healthcare problems are numerous. When we look at the average citizen
+                                    seeking healthcare he or she is faced with few options, the quality options are
+                                    beyond the budget of the average Pakistani while the affordable ones typically do
+                                    not offer great quality. The patient self-medicates, pays excessive amounts for good
+                                    quality care in a private setup or waits in long lines at government run OPDs.
+
+                                    TinDOc was created as a solution to these problems. The idea is simple, we provide
+                                    quality care at a cost that the average Pakistani can afford.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        VISION
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Every woman and child should receive quality healthcare that is affordable.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        MISSION
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Establish clinics for women and children across all tier 1 and tier 2 cities of
+                                    Pakistan, which offer quality services, at an affordable price.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        OBJECTIVES
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  01. Bridge the gap between tertiary care centers and private clinics.<br>
+                                  02. Reduce the burden of disease over all by providing primary care in communities we
+                                    serve.<br>
+                                  03. The quality and affordability is always monitored.<br>
+                                  04. Patients are given time and medical attention, and counseling is an integral
+                                    component of the care pathway.
+                                </div>
+                            </div>
+                        </div>
+                </center>
+            </div>
+        </div>
+        <!-- End of Jumbotron -->
+
+        <!-- Start Footer -->
+        <footer class="footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 offset-1 col-sm-2 mt-5">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled ">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./aboutus.html">About Us</a></li>
+                            <li><a href="./schoolhealth.html">School Health</a></li>
+                            <li><a href="./contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5 mt-5 ">
+                        <h5>Our Address</h5>
+                        <address class="mb-3">
+                            R-366 Sector 7D/3 North KArachi<br>
+                            Near Iqra University North Campus<br>
+                            Pakistan<br>
+                            <i class="mb-3 fa fa-phone fa-lg"></i> Tel.: +923358229828<br>
+                            <i class="mb-3 fa fa-fax fa-lg"></i>Fax: +852 8765 4321<br>
+                            <i class="fa fa-envelope fa-lg"></i> Email: <a
+                                href="mailto:malaikakhalid_@hotmail.com">malaikakhalid_@hotmail.com</a>
+                        </address>
+                    </div>
+                    <div class="col-sm-12 col-sm-4  align-self-center mt-4 ">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                    class="fa fa-google-plus fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-facebook"
+                                href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                    class="fa fa-linkedin fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                    class="fa fa-twitter fa-md"></i></a>
+                            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+                                    class="fa fa-youtube fa-md"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:" class="fa fa-envelope fa-md"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>© Copyright 2020 TinDoc</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinDOc</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <!-- NavBar -->
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="logo" width="150px" height="30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#supportedcontent"
+                aria-controls="suportedcontent" aria-expanded="false" aria-label="Toggle Navigtion">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="supportedcontent">
+                <ul class="navbar-nav mr-auto ml-3 ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./schoolhealth.html">School Health</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mr-3">
+                    <a data-toggle="modal" data-target="#login">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
+            </div>
+        </nav>
+
+
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1"
+                                        id="exampleInputEmail3" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Navbar -->
+
+        <!-- Banner Section -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center ">
+                            <h2 class=" heading text-uppercase  mt-5 mb-5">
+                                Doctor at your door step
+                            </h2>
+                            <h4 class=" header-para mt-5 mb-5 ">
+                                24/7 Online Services
+                            </h4>
+                            <a class="get-started btn-primary mb-3 mt-5" data-toggle="modal" data-target="#SignIn">Get
+                                Started </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="SignIn" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sign Up </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputEmail3">Firstname</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter Firstname" style="padding: 10px;" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputPassword3">Lastname</label>
+                                    <input type="text" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Enter Lastname" style="padding: 10px;"
+                                        required>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputEmail3">City</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter City" style="padding: 10px;" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputPassword3">Country</label>
+                                    <input type="text" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Enter Country" style="padding: 10px;"
+                                        required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputEmail3">Phonr Number</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter Phone Number" maxlength="11" style="padding: 10px;" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputPassword3">CNIC</label>
+                                    <input type="text" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Enter CNIC number"
+                                        style="padding: 10px;" required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1"
+                                        id="exampleInputEmail3" placeholder="Enter email" style="padding: 10px;"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password" style="padding: 10px;"
+                                        required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Banner Section -->
+
+        <!-- Available Doctors -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-12">
+                    <h2 class="mt-3 text-center text-uppercase mb-3" style="color: blueviolet;">
+                       <u> Available Doctors</u>
+                    </h2>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;" style="box-shadow: blueviolet !important;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar1.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Malaika Khalid</h5>
+                                    <p class="card-text">MBBS, FCPS, MPHIL, PHD
+                                        <br>
+                                        Consultant with experience of 17 years
+                                    </p>
+                                    <p class="card-text" ><small class="text-muted" style="color: blue !important;">Available Online: 05:00 PM - 10:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar2.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Ifrah Khalid</h5>
+                                    <p class="card-text">MBBS, FRCS, FCPS
+<br>
+                                        Professor with experience of 25 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 05:00 PM - 07:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar3.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Areesha Fareed</h5>
+                                    <p class="card-text">MBBS, FCPS (Urology)
+<br>
+                                        Assistant Professor experience  15 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 09:00 AM - 10:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar4.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Neha Anwar</h5>
+                                    <p class="card-text">MBBS, FCPS (Urology)
+<br>
+                                        Consultant with experience of 10 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 06:00 PM - 10:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar5.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Rimsha Faisla</h5>
+                                    <p class="card-text">MBBS
+<br>
+                                        Consultant with experience of 2 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 02:00 AM - 01:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar6.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Huma Saeed</h5>
+                                    <p class="card-text">MBBS, M.S. In Audiology (USA), Au.D 
+<br>
+                                        Consultant with experience of 31 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 09:00 AM - 05:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar7.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Khalid Masood</h5>
+                                    <p class="card-text">MBBS, AFSA (Medical Oncology)
+<br>
+                                        Consultant with experience of 30 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 11:00 AM - 05:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar8.jpg " class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Nabia Anwar</h5>
+                                    <p class="card-text">MBBS, FCPS (Cardiac Surgery)
+<br>
+                                        Consultant with experience of 3 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 06:00 PM - 10:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./assets/avatar9.jpg" class="avatar mt-5 ml-5" alt="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Junaid Jawad</h5>
+                                    <p class="card-text">DC (Doctor of Chiropractor), Trainer 
+<br>
+                                        Consultant with experience of 5 years</p>
+                                    <p class="card-text"><small class="text-muted" style="color: blue !important;">Available Online: 04:00 PM - 08:00 PM</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End Of Available Doctors -->
+
+
+        <!-- Start of Servives -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center mt-4 text-uppercase" style="color: blueviolet;"><u>Our Services</u></h2>
+                    <p class="mt-3 text-center"><b>How we can Help<br> Online care is Growing</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-service">
+            <div class="card1">
+                <div class="image1">
+                    <center>
+                        <img src="./assets/2.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">Sinus Cough And Allergy</h4>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="image2">
+                    <center>
+                        <img src="./assets/women.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">Women Health</h4>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="image3">
+                    <center>
+                        <img src="./assets/eye.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">Eye And Ear</h4>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="image4">
+                    <center>
+                        <img src="./assets/kids.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">Kids Health</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-service">
+            <div class="card1">
+                <div class="image1">
+                    <center>
+                        <img src="./assets/skin.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">Skin Rashes</h4>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="image2">
+                    <center>
+                        <img src="./assets/sexual.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">Sexual Health</h4>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="image3">
+                    <center>
+                        <img src="./assets/flue.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">FLU</h4>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="image4">
+                    <center>
+                        <img src="./assets/prevention.JPG" class="avatar1" alt="avatar">
+                    </center>
+                </div>
+                <div>
+                    <h4 class="center">Chronic And Prevention</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Services -->
+
+
+
+        <!-- Description -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center mt-4 text-uppercase" style="color: blueviolet;"><u>Our Policy</u></h2>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="main-desc">
+            <div class="descript1">
+                <p class="text-center font "><b>Quality by design</b></p>
+                <h1 class="text-center">Safe and secure</h1>
+                <p class="text-center">We're setting the highest quality standards for the industry. And your
+                    information is protected at
+                    every step. The result - treatment and services for care you can trust.</p>
+                <center>
+                    <button class=" learn-more"> Learn More</button>
+                </center>
+            </div>
+            <div class="descript2">
+                <img src="./assets/patient-copy.jpg " class="avatar2" alt="patient" width="50%">
+            </div>
+
+        </div>
+
+
+        <div class="main-desc ">
+            <div class="descript2">
+                <img src="./assets/have-insurance.jpg" class="avatar3" alt="patient" width="100%">
+            </div>
+            <div class="descript1">
+                <p class="text-center font "><b>Find your benefit</b></p>
+                <h1 class="text-center">We're well connected</h1>
+                <p class="text-center">Find the companies we work with and their contact information, to check your plan
+                    and coverage.</p>
+                <center>
+                    <button class=" learn-more"> Insurance Companies
+                    </button>
+                </center>
+            </div>
+
+        </div>
+
+
+
+        <!-- End of Description -->
+
+
+        <!-- Frequently Ask Question -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center mt-4 text-uppercase mb-5" style="color: blueviolet;"><u>Frequently Asked Questions</u></h2>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="accordian" id="question">
+            <div class="card">
+                <div class="card-header" id="headingOne" style=" background-color: rgb(119, 40, 192,0.6);">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: white; font-size: 22px;">
+                            About Us
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        Pakistan’s healthcare problems are numerous. When we look at the average citizen
+                        seeking healthcare he or she is faced with few options, the quality options are
+                        beyond the budget of the average Pakistani while the affordable ones typically do
+                        not offer great quality. The patient self-medicates, pays excessive amounts for good
+                        quality care in a private setup or waits in long lines at government run OPDs.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingTwo" style=" background-color: rgb(119, 40, 192,0.7);">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: white; font-size: 22px;">
+                            Doctors Available
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        <div class="Doct">
+                            <div class="col-lg-4 col-sm-6 col-md-6 ">
+                                <div class="doctor1">
+                                    <button class="btn btn-primary btn-doctor doctor_available" > Dermatologist </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-md-6 ">
+                                <div class="doctor1">
+                                    <button class="btn btn-primary btn-doctor doctor_available"> Neuro Physician </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-md-6  ">
+                                <div class="doctor1">
+                                    <button class="btn btn-primary btn-doctor doctor_available"> Urologist </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-md-6 ">
+                                <div class="doctor1">
+                                    <button class="btn btn-primary btn-doctor doctor_available"> Gastroentologists</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-md-6 ">
+                                <div class="doctor1">
+                                    <button class="btn btn-primary btn-doctor doctor_available"> Gynecologist </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-md-6 ">
+                                <div class="doctor1">
+                                    <button class="btn btn-primary btn-doctor doctor_available"> Psychiatrist </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree" style=" background-color: rgb(119, 40, 192,0.6);">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree" style="color: white; font-size: 22px;">
+                                Contact Info
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Call at 03111222398 to get Online Appointment in Online Clinic
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour" style=" background-color: rgb(119, 40, 192,0.7);">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour" style="color: white; font-size: 22px;">
+                                Location
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            R-366 Sector 7D/3 North Karachi Gulshan-e-Farooq
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <!-- End of Frequently Ask Question -->
+
+
+            <!-- Start Footer -->
+            <footer class="footer ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-1 col-sm-2 mt-5">
+                            <h5>Links</h5>
+                            <ul class="list-unstyled ">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./aboutus.html">About Us</a></li>
+                                <li><a href="./schoolhealth.html">School Health</a></li>
+                                <li><a href="./contactus.html">Contact US</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-7 col-sm-5 mt-5">
+                            <h5>Our Address</h5>
+                            <address>
+                                R-366 Sector 7D/3 North KArachi<br>
+                                Near Iqra University North Campus<br>
+                                Pakistan<br>
+                                <i class="mb-3 fa fa-phone fa-lg"></i> Tel.: +923358229828<br>
+                                <i class="mb-3 fa fa-fax fa-lg"></i>Fax: +852 8765 4321<br>
+                                <i class="mb-3 fa fa-envelope fa-lg"></i> Email: <a
+                                    href="mailto:malaikakhalid_@hotmail.com">malaikakhalid_@hotmail</a>
+                            </address>
+                        </div>
+                        <div class="col-sm-12 col-sm-4  align-self-center mt-4 ">
+                            <div class="text-center">
+                                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                        class="fa fa-google-plus fa-md"></i></a>
+                                <a class="btn btn-social-icon btn-facebook"
+                                    href="http://www.facebook.com/profile.php?id="><i
+                                        class="fa fa-facebook fa-md"></i></a>
+                                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                        class="fa fa-linkedin fa-md"></i></a>
+                                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                        class="fa fa-twitter fa-md"></i></a>
+                                <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+                                        class="fa fa-youtube fa-md"></i></a>
+                                <a class="btn btn-social-icon" href="mailto:" class="fa fa-envelope fa-md"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <p>© Copyright 2020 TinDoc</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+        </div>
+
+
+
+</body>
+
+</html>
